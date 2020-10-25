@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link href="animeStyle.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <h1>These are the search Results!!!</h1>
+    <% 
+        for (var i =0;i<animeData.length;++i){%>
+            <div class="oneAnime">
+                Title:<%=animeData[i].title%></br>
+                Type:<%=animeData[i].type%></br>
+                Synopsis:<%=animeData[i].synopsis%></br>
+
+            </div>
+        
+        <%}
+    %>
+</body>
+</html>
