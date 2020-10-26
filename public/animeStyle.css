@@ -1,9 +1,7 @@
-/* div {
-  width: 300px;
-  border: 5px solid green;
-  padding: 50px;
-  margin: 20px;
-} */
+#result {
+  font-family: "Vampiro One", cursive;
+  margin-left: 35%;
+}
 .ejs {
   display: flex;
   flex-wrap: wrap;
