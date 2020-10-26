@@ -25,6 +25,7 @@
 }
 
 form.searchBtn input[type="text"] {
+  margin-left: 127px;
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
@@ -47,4 +48,5 @@ form.searchBtn button {
   border: 1px solid grey;
   border-left: none;
   cursor: pointer;
+  margin: 16px auto;
 }

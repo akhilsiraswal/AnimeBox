@@ -7,12 +7,13 @@
 .ejs {
   display: flex;
   flex-wrap: wrap;
+  background-color: #f1f1f1;
 }
 .oneAnime {
   width: 20%;
   margin: 16px;
   border: 1px solid #eee;
-  box-shadow: 0 2px 3px #ccc;
+  box-shadow: 0 5px 7px #ccc;
   padding: 16px;
   text-align: center;
 }

@@ -19,11 +19,11 @@ app.set("view engine", "ejs");
 app.get("/anime", (req, res) => {
   let animeData;
   const animeToSearch = req.query.search;
-  var title, image, synopsis, type;
   anime
     .search("manga", animeToSearch)
     .then((data) => {
       animeData = data.results;
+      // res.send(animeData);
       res.render("animes", {
         animeData: animeData,
       });
