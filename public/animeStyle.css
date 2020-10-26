@@ -4,13 +4,15 @@
   padding: 50px;
   margin: 20px;
 } */
-
-div {
-  width: 60%;
-  margin: 16px auto;
+.ejs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.oneAnime {
+  width: 20%;
+  margin: 16px;
   border: 1px solid #eee;
   box-shadow: 0 2px 3px #ccc;
   padding: 16px;
-  /* text-align: center; */
+  text-align: center;
 }
-@me;

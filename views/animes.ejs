@@ -9,16 +9,22 @@
 </head>
 <body>
     <h1>These are the search Results!!!</h1>
-    <% 
-        for (var i =0;i<animeData.length;++i){%>
-            <div class="oneAnime">
-                Title:<%=animeData[i].title%></br>
-                Type:<%=animeData[i].type%></br>
-                Synopsis:<%=animeData[i].synopsis%></br>
-
-            </div>
+    <div class="ejs">
         
-        <%}
-    %>
+        <% 
+            for (var i =0;i<animeData.length;++i){%>
+                <div class="oneAnime">
+                    
+                <img src="<%= animeData[i].image_url%> "alt="Image"></br>
+                    Title:<%=animeData[i].title%></br>
+                    Type:<%=animeData[i].type%></br>
+                    Synopsis:<%=animeData[i].synopsis%></br>
+    
+                </div>
+            
+            <%}
+        %>
+
+    </div>
 </body>
 </html>

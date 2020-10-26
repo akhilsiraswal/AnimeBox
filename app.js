@@ -13,7 +13,9 @@ app.use(express.static("Images"));
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/views/index.html");
 });
+
 app.set("view engine", "ejs");
+
 app.get("/anime", (req, res) => {
   let animeData;
   const animeToSearch = req.query.search;
@@ -25,15 +27,8 @@ app.get("/anime", (req, res) => {
       res.render("animes", {
         animeData: animeData,
       });
-      // animeData.map((dat) => {
-      //   title = dat.title;
-      //   image = dat.image_url;
-      //   synopsis = dat.synopsis;
-      //   type = dat.type;
-      // });
-      // console.log(animeData);
     })
-    .catch((err) => console.log(err));
+    .catch((err) => res.send(err));
 });
 
 app.listen(8000, (req, res) => {
