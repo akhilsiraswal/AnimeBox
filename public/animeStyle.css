@@ -14,4 +14,9 @@
   box-shadow: 0 5px 7px #ccc;
   padding: 16px;
   text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.oneAnime:hover {
+  transform: scale(1.1);
 }
