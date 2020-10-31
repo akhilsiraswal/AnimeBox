@@ -5,18 +5,37 @@
 .ejs {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f1f1f1;
+  background-color: #eee;
+  padding: 1%;
 }
 .oneAnime {
-  width: 20%;
-  margin: 16px;
+  width: 29%;
+  margin: 1%;
   border: 1px solid #eee;
   box-shadow: 0 5px 7px #ccc;
-  padding: 16px;
+  padding: 1%;
+  font-size: 1.2rem;
   text-align: center;
+  background-color: #fff;
   transition: all 0.2s ease;
   cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .oneAnime:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+
+.search-img{
+  margin-right: 2%;
+}
+
+.details{
+  text-align: left;
+  margin-left: 3%;
 }

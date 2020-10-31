@@ -16,14 +16,14 @@
             for (var i =0;i<animeData.length;++i){%>
                 <div class="oneAnime">
                     <a href="<%=animeData[i].url%>">
-                        <img src="<%= animeData[i].image_url%> "alt="Image"></br>
+                        <img src="<%= animeData[i].image_url%> "alt="Image" class="search-img"></br>
+                        <div class="details">
+                            <p class="title"><b>Title:</b> <%=animeData[i].title%></p>
+                            <p class="type"><b>Type:</b> <%=animeData[i].type%></p>
+                            <p class="para"><%=animeData[i].synopsis%></p>
+                        </div>
                     </a>
-                    Title:<%=animeData[i].title%></br>
-                    Type:<%=animeData[i].type%></br>
-                    <%=animeData[i].synopsis%></br>
-    
                 </div>
-            
             <%}
         %>
 

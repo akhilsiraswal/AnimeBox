@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,14 +22,13 @@
   width: 300px;
   height: 400px;
   padding: 30px;
-}
+ } 
 
 form.searchBtn input[type="text"] {
   margin-left: 127px;
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
-  /* float: left; */
   width: 60%;
   background: #f1f1f1;
 }
@@ -39,7 +38,6 @@ form.searchBtn button:hover {
 }
 
 form.searchBtn button {
-  /* float: center; */
   width: 20%;
   padding: 10px;
   background: #2196f3;
@@ -49,4 +47,84 @@ form.searchBtn button {
   border-left: none;
   cursor: pointer;
   margin: 16px auto;
+}
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://onepiecetheories.com/wp-content/uploads/2016/10/one-piece-naruto-fairy-tail-bleach.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+input {
+  width: 100%;
+  padding: 1.5%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  outline: none;
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+input::placeholder {
+  color: rgba(190, 190, 190, 0.747);
+}
+input:focus {
+  transform: scale(1.05);
+}
+
+button {
+  font-size: 2rem;
+  padding: 1%;
+  margin: 1%;
+  width: 300px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+  background-color: rgb(255, 153, 0);
+  outline: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(204, 128, 14);
+}
+
+h1 {
+  font-family: "Anton", monospace;
+  font-size: 7rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  pointer-events: none;
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  -o-user-select: none;
+  user-select: none;
 }
